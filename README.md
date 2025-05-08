@@ -48,3 +48,9 @@ Sistemas operacionais suportados
 ```bash 
 pyinstaller --onefile --windowed --noconsole --icon=icons/blue_shutdown.ico main.py
 ```
+
+## 📝 TODO
+1. 🔐 Adicionar autenticação ou senha para restringir o agendamento de desligamentos
+2. 📋 Log de atividades para rastrear os agendamentos realizados
+3. ⏳ Limites de tempo configuráveis (ex: não permitir agendamento abaixo/acima de X minutos)
+4. 🔗 Integração com política de grupo/local
