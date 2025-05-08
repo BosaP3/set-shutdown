@@ -7,8 +7,18 @@ from .views.shutdown_by_datetime import DateTimeView
 class AutoShutdownApp:
     def __init__(self):
         self.root = tk.Tk()
-        self.root.title("Auto Shutdown")
-        self.root.geometry("395x250")
+        self.root.title("Set Shutdown ⏱ ")
+        
+        window_width = 345
+        window_height = 300
+
+        screen_width = self.root.winfo_screenwidth()
+        screen_height = self.root.winfo_screenheight()
+
+        x_position = (screen_width // 2) - (window_width // 2)
+        y_position = (screen_height // 2) - (window_height // 2)
+
+        self.root.geometry(f"{window_width}x{window_height}+{x_position}+{y_position}")
 
         self.container = ttk.Frame(self.root)
         self.container.pack(fill="both", expand=True)
