@@ -42,3 +42,9 @@ Python 3.8+
 Sistemas operacionais suportados
 
 - Windows (comando shutdown nativo)
+
+## 🛠️ Geração de Executável (OPCIONAL)
+
+```bash 
+pyinstaller --onefile --windowed --noconsole --icon=icons/blue_shutdown.ico main.py
+```
